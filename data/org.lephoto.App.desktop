@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=LEPHOTO
+GenericName=Photo Viewer & Editor
+Comment=Viewer, editor e strumenti batch per foto
+Exec=lephoto %F
+Icon=org.lephoto.App
+Terminal=false
+Categories=Graphics;Photography;Viewer;GTK;
+MimeType=image/jpeg;image/png;image/webp;image/gif;image/bmp;image/tiff;
+StartupWMClass=org.lephoto.App

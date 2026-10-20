@@ -1,0 +1,16 @@
+# flatpak-builder --user --install --force-clean build-flatpak org.lephoto.App.yml
+app-id: org.lephoto.App
+runtime: org.gnome.Platform
+runtime-version: "48"
+sdk: org.gnome.Sdk
+command: lephoto
+finish-args: [--share=ipc, --socket=wayland, --socket=fallback-x11, --device=dri, --filesystem=xdg-pictures, --filesystem=xdg-download, --share=network]
+modules:
+  - name: python3-pillow
+    buildsystem: simple
+    build-options: {build-args: [--share=network]}
+    build-commands: ["pip3 install --prefix=/app pillow"]
+  - name: lephoto
+    buildsystem: simple
+    build-commands: ["make install PREFIX=/app"]
+    sources: [{type: dir, path: .}]

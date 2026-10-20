@@ -133,3 +133,8 @@ To add a filter, register a function that takes and returns a Pillow image in th
 Lasso and brush Cut Out, perspective crop, paint and retouch brushes (Liquify, Clone
 Stamp, Spot Healing, Red Eye, Mixer), Photo Merge (HDR, Focus Stacking), shapes and
 arrows, Text Warp, Magnifier, and the large filter/frame/sticker catalogs.
+
+## License
+
+Not yet specified. Choose a license before distributing the packages
+(the RPM spec currently declares MIT as a placeholder).

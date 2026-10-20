@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+import os, sys
+here = os.path.dirname(os.path.realpath(__file__))
+for base in (os.path.join(here, "..", "share", "lephoto"), os.path.join(here, "..")):
+    if os.path.isdir(os.path.join(base, "lephoto")):
+        sys.path.insert(0, os.path.abspath(base)); break
+from lephoto.app import main
+main()
